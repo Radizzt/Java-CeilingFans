@@ -22,7 +22,7 @@ public class CeilingFanTest {
     public void testReverseCordFalseToTrue(){
         ceilingFan.setReverse(false);
         ceilingFan.pullReverseCord();
-        assertTrue(ceilingFan.getReverse());
+        assertTrue(ceilingFan.isReverse());
     }
 
     @Test
@@ -30,6 +30,6 @@ public class CeilingFanTest {
     public void testReverseCordTrueToFalse(){
         ceilingFan.setReverse(true);
         ceilingFan.pullReverseCord();
-        assertFalse(ceilingFan.getReverse());
+        assertFalse(ceilingFan.isReverse());
     }
 }

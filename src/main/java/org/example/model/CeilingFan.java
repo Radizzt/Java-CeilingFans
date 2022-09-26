@@ -3,11 +3,13 @@ package org.example.model;
 /**
  * CeilingFan --- Represent a Ceiling Fan
  *
+ * @author Richard Huynh
  */
 public class CeilingFan {
 
     /**
      * Speed of the fan, default is 0
+     *
      */
     private int speed = 0;
     /**
@@ -15,20 +17,38 @@ public class CeilingFan {
      */
     private boolean reverse = false;
 
-    //getter
-    public int getSpeed(){
+    /**
+     * Gets speed
+     *
+     * @return value of speed
+     */
+    public int getSpeed() {
         return speed;
     }
 
-    public boolean getReverse(){
-        return reverse;
-    }
-
-    //setter
+    /**
+     * Set speed
+     * {@link #speed}
+     * @param speed. speed to set
+     */
     public void setSpeed(int speed) {
         this.speed = speed;
     }
 
+    /**
+     * Gets reverse
+     *
+     * @return value of reverse
+     */
+    public boolean isReverse() {
+        return reverse;
+    }
+
+    /**
+     * Set reverse
+     *
+     * @param reverse. reverse to set
+     */
     public void setReverse(boolean reverse) {
         this.reverse = reverse;
     }
