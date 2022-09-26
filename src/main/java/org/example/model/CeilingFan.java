@@ -1,7 +1,18 @@
 package org.example.model;
 
+/**
+ * CeilingFan --- Represent a Ceiling Fan
+ *
+ */
 public class CeilingFan {
+
+    /**
+     * Speed of the fan, default is 0
+     */
     private int speed = 0;
+    /**
+     * Direction of the fan, default is false
+     */
     private boolean reverse = false;
 
     //getter
@@ -24,20 +35,28 @@ public class CeilingFan {
 
     //method
 
-    /*
-     * Speed will increased by one. if current speed is at 3, will change to 0
+    /**
+     * Increase the speed value by one.
+     * If the speed value is more than 3, it will return 0
+     *
      */
     public void pullSpeedCord(){
         this.speed = (this.speed + 1) % 4;
     }
 
-    /*
-     * set reverse to the opposite of current boolean
+    /**
+     * Set the reverse property to the opposite of current boolean
      */
     public void pullReverseCord(){
         this.reverse = !this.reverse;
     }
 
+
+    /**
+     * This method simply display all the object properties in a cleaner format
+     * Note: for speed 0 it is display as 'off'
+     * and for reverse property true is 'reverse', false is 'forward'
+     */
     public void displayCurSetting(){
         System.out.printf("-----------------------%n");
         System.out.printf("Current Setting:%n");
