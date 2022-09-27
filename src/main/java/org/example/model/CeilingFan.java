@@ -26,15 +26,6 @@ public class CeilingFan {
     }
 
     /**
-     * Set current ceiling fan speed
-     *
-     * @param speed speed to set
-     */
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    /**
      * Gets the current reverse boolean of the ceiling fan
      *
      * @return boolean value of reverse
@@ -43,14 +34,6 @@ public class CeilingFan {
         return reverse;
     }
 
-    /**
-     * Set current ceiling fan reverse boolean
-     *
-     * @param reverse reverse to set
-     */
-    public void setReverse(boolean reverse) {
-        this.reverse = reverse;
-    }
 
     //method
 
