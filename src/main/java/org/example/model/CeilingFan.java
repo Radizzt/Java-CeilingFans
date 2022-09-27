@@ -18,7 +18,7 @@ public class CeilingFan {
     private boolean reverse = false;
 
     /**
-     * Gets speed
+     * Gets the current speed of the ceiling fan
      *
      * @return value of speed
      */
@@ -36,9 +36,9 @@ public class CeilingFan {
     }
 
     /**
-     * Gets reverse
+     * Gets the current reverse boolean of the ceiling fan
      *
-     * @return value of reverse
+     * @return boolean value of reverse
      */
     public boolean isReverse() {
         return reverse;
@@ -46,7 +46,7 @@ public class CeilingFan {
 
     /**
      * Set reverse
-     *
+     * {@link #reverse}
      * @param reverse. reverse to set
      */
     public void setReverse(boolean reverse) {
