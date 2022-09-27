@@ -5,7 +5,7 @@ import org.example.model.CeilingFan;
 import java.util.Scanner;
 
 /**
- * Main --- program to run a fan simulation that have 4 speeds 0-3
+ * Main --- program to run a fan simulation that have four speeds (0-3)
  * and the ability to go forward/reverse
  * @author Richard Huynh
  * @version 1.0

@@ -9,14 +9,20 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CeilingFanTest {
     private final CeilingFan ceilingFan = new CeilingFan();
     @ParameterizedTest
-    @ValueSource(ints = {0,1,2,3})
+    @ValueSource(ints = {0,1,2})
     @DisplayName("Test Speed Cord")
     public void testSpeedCord(int speed){
         ceilingFan.setSpeed(speed);
         ceilingFan.pullSpeedCord();
         assertEquals(speed == 3 ? 0 : speed + 1, ceilingFan.getSpeed());
     }
-
+    @Test
+    @DisplayName("Test Speed Reset Back to Zero")
+    public void testSpeedCordResetBackToZero(){
+        ceilingFan.setSpeed(3);
+        ceilingFan.pullSpeedCord();
+        assertEquals(0, ceilingFan.getSpeed());
+    }
     @Test
     @DisplayName("Test Reverse Cord: False to True")
     public void testReverseCordFalseToTrue(){
