@@ -1,2 +1,4 @@
 /out/
 /target/
+src/test/resources/features/is_it_friday_yet.feature
+src/test/java/IsItFridayYetTest.java
