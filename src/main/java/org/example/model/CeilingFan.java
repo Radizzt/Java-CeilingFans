@@ -9,7 +9,6 @@ public class CeilingFan {
 
     /**
      * Speed of the fan, default is 0
-     *
      */
     private int speed = 0;
     /**
@@ -27,9 +26,9 @@ public class CeilingFan {
     }
 
     /**
-     * Set speed
-     * {@link #speed}
-     * @param speed. speed to set
+     * Set current ceiling fan speed
+     *
+     * @param speed speed to set
      */
     public void setSpeed(int speed) {
         this.speed = speed;
@@ -45,9 +44,9 @@ public class CeilingFan {
     }
 
     /**
-     * Set reverse
-     * {@link #reverse}
-     * @param reverse. reverse to set
+     * Set current ceiling fan reverse boolean
+     *
+     * @param reverse reverse to set
      */
     public void setReverse(boolean reverse) {
         this.reverse = reverse;
@@ -58,7 +57,6 @@ public class CeilingFan {
     /**
      * Increase the speed value by one.
      * If the speed value is more than 3, it will return 0
-     *
      */
     public void pullSpeedCord(){
         this.speed = (this.speed + 1) % 4;
