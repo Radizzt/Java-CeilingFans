@@ -3,6 +3,7 @@ jdk: openjdk18
 script:
   - mvn test
   - mvn --version
+  - mvn bleh
 deploy:
   provider: pages
   skip_cleanup: true
