@@ -3,3 +3,11 @@ jdk: openjdk18
 script:
   - mvn test
   - mvn --version
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  target_branch: main
+  on:
+    branch: travis
