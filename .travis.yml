@@ -1,4 +1,5 @@
 language: java
 jdk: openjdk18
 script:
-  - mvn --version
+  - mvn test
+  - mvn test -B
