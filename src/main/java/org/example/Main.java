@@ -19,7 +19,7 @@ public class Main {
         //continually scan for user input until "Q" key is read
         while (!userInput.equals("Q")){
             fan.displayCurSetting();
-            System.out.println("Press Q to quit application, S to pull the speed cord, R to pull the reverse cord.");
+            System.out.println("Press Q to quit app, S to pull the speed cord, R to pull the reverse cord.");
             userInput = myScanner.nextLine().toString().toUpperCase();
             switch(userInput){
                 case "S":
