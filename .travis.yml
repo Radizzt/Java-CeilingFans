@@ -1,5 +1,0 @@
-language: java
-jdk: openjdk18
-script:
-  - mvn test
-  - mvn test -B
